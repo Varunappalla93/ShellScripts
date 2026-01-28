@@ -1,6 +1,7 @@
 # Day 15
+
 #!/bin/bash
+NAME="Varun"
+AGE=32
 
-name="Varun"
-
-echo "Hi ${name}, how are you doing ?" 
+echo "Hi ${NAME}, how are you doing ? and your age is ${AGE}" 

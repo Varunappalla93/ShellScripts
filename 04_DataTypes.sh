@@ -9,8 +9,12 @@ NUM2=200
 
 SUM=$(($NUM1+$NUM2))
 echo "SUM is ${SUM}"
+# SUM is 300
 
 
 # Arrays
 FRUITS=("APPLE","BANANA","POM")
 echo "Fruits are ${FRUITS[@]}"
+# Fruits are APPLE,BANANA,POM
+
+echo "First Fruit is ${FRUITS[0]}"

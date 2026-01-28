@@ -32,8 +32,9 @@ echo "Script started at ${START_TIME}"
 END_TIME=$(date +%s)
 echo "Script ended at ${END_TIME}"
 
+sleep 10
+
 TOTAL_TIME=$(($END_TIME-$START_TIME))
 echo "Script executed in ${TOTAL_TIME}"
 
 # O/P - Script executed at Wed Jan 28 07:26:05 UTC 2026
-

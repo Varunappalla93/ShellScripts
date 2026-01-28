@@ -3,4 +3,4 @@
 
 name="Varun"
 
-echo "Hi ${name}, how are you ?" 
+echo "Hi ${name}, how are you doing ?" 

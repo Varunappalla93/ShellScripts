@@ -1,7 +1,7 @@
 # Day 15
 #!/bin/bash
 
-# DataTypes - Variables hold data types - Number or string
+# DataTypes - Variables hold data types - Number, String and Arrays.
 NUM1=100
 NUM2=200
 
@@ -20,3 +20,5 @@ echo "Fruits are ${FRUITS[@]}"
 
 echo "First Fruit is ${FRUITS[0]}"
 echo "Second Fruit is ${FRUITS[1]}"
+# First Fruit is APPLE
+# Second Fruit is BANANA

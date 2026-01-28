@@ -12,6 +12,7 @@
 # $$ - PID of the script
 # $! - Background process id
 # $* - All args passed to script  -> $* - treats as single args
+# $? - Exit status
 
 echo "All args passed to script : $@"  
 echo "No of variables passed to script : $#"

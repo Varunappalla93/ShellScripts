@@ -12,7 +12,7 @@
 # $$ - PID of the script
 # $! - Background process id
 # $* - All args passed to script  -> $* - treats as single args
-# $? - Exit status
+# $? - Exit status of previous command
 
 echo "All args passed to script : $@"  
 echo "No of variables passed to script : $#"
@@ -24,6 +24,7 @@ echo "PID of script : $$"
 sleep 100 &
 echo "PID of recently executed backgroung process : $!"
 echo "All args passed to script : $*"  
+echo "Exit status of previous command : $?"  
 
 
 # O/P - 
@@ -36,3 +37,4 @@ echo "All args passed to script : $*"
 # PID of script : 2163
 # PID of recently executed backgroung process : 2164
 # All args passed to script : var vin
+# Exit status of previous command : 0

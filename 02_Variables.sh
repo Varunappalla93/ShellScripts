@@ -26,18 +26,18 @@
 
 
 # to execute one command and store in START_DATE variable
-# START_TIME=$(date +%s)
-# echo "Script started at ${START_TIME}"
+START_TIME=$(date +%s)
+echo "Script started at ${START_TIME}"
 
-# sleep 10
+sleep 10
 
-# END_TIME=$(date +%s)
-# echo "Script ended at ${END_TIME}"
+END_TIME=$(date +%s)
+echo "Script ended at ${END_TIME}"
 
-# TOTAL_TIME=$(($END_TIME-$START_TIME))
-# echo "Script executed in ${TOTAL_TIME}"
+TOTAL_TIME=$(($END_TIME-$START_TIME))
+echo "Script executed in ${TOTAL_TIME}"
 
-# # O/P - 
-# # Script started at 1769587182
-# # Script ended at 1769587192
-# # Script executed in 10
+# O/P - 
+# Script started at 1769587182
+# Script ended at 1769587192
+# Script executed in 10

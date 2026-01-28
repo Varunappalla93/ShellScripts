@@ -3,13 +3,13 @@
 
 # Conditions
 # if-else if -else
-if [Condition]; then
-code
-elif [Condition]; then
-code
-else
-code
-fi
+# if [Condition]; then
+# code
+# elif [Condition]; then
+# code
+# else
+# code
+# fi
 
 # -gt -lt -eq -ne -ge -le
 

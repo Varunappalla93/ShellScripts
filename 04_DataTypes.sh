@@ -5,5 +5,6 @@
 NUM1=100
 NUM2=200
 
-echo $(($NUM1+$NUM2))
+SUM=$(($NUM2-$NUM1))
+echo "SUM is ${SUM}"
 

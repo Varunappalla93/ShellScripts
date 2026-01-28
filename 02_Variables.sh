@@ -21,5 +21,5 @@ read USERNAME
 echo "username is ${USERNAME}"
 
 echo "Please enter your password"
-read PASSWORD -s
+read -s PASSWORD
 echo "password is ${PASSWORD}"

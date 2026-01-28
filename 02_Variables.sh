@@ -9,4 +9,4 @@
 # Dynamic variable arguments via terminal
 NAME=$1
 AGE=$2
-echo "Hello I am ${NAME}" and my age is ${AGE}"
+echo "Hello I am ${NAME} and my age is ${AGE}"

@@ -14,7 +14,6 @@
 # -gt -lt -eq -ne -ge -le
 
 NUMBER=$1
-
 if [ $NUMBER -gt 20 ]; then
     echo "Given Number: $NUMBER is greater than 20"
 elif [ $NUMBER -eq 20 ]; then

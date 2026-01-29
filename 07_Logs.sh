@@ -26,11 +26,11 @@ fi
 
 echo "Installing nginx"
 dnf install nginx -y &>> $LOGS_FILE
-VALIDATE $?,"nginx installation"
+VALIDATE $? "nginx installation"
 
 echo "Installing mysql"
 dnf install mysql -y &>> $LOGS_FILE
-VALIDATE $?,"sql installation"
+VALIDATE $? "sql installation"
 
 # Redirections
 ls -l > ou.txt-> stores command output to ou.txt file.

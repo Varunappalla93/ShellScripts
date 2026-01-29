@@ -14,7 +14,7 @@ fi
 mkdir -p $LOGS_FOLDER
 
 # Validate function
-# tee - tee is a command that copies input to both the screen and a file at the same time.
+# tee - tee is a command that copies input to both the screen and the log file at the same time.
 VALIDATE()
 {
 if [ $1 -ne 0 ]; then

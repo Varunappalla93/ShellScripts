@@ -6,6 +6,8 @@
 # do
 #     echo $i
 # done
+# 1 2 3
+
 
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"

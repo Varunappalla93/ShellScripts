@@ -7,14 +7,14 @@ USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
 # colors
-DEFAULT='\e[0m'
+NORMAL='\e[0m'
 RED='\e[31m'
 GREEN='\e[32m'
 BLUE='\e[33m'
 
 
 if [ $USERID -ne 0 ]; then
-    echo -e "$RED Pls run this script with root user access $DEFAULT"
+    echo -e "$RED Pls run this script with root user access $NORMAL"
     exit 1
 fi
 
@@ -32,14 +32,14 @@ else
 fi
 }
 
-for package in $@    # sudo sh 08_Loops.sh nginx mysql
+for package in "$@" 
 do
-    dnf list installed $package &>> $LOGS_FILE
+    dnf list installed "$package" &>> "$LOGS_FILE"
     if [ $? -ne 0 ]; then
         echo "$package is not installed, installing now"
-        dnf install $package -y &>> $LOGS_FILE   
-        VALIDATE $? "$package installation"
+        dnf install "$package" -y &>> "$LOGS_FILE"
+        VALIDATE $? "$package"
     else
-        echo -e "$package is already installed, $BLUE skipping $NORMAL"
+        echo -e "$package already installed ... $BLUE SKIPPING $NORMAL"
     fi
 done

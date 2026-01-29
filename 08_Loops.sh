@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # Loops
-for i in {1,2,3..100}
+for i in {1,2,3}
 do
     echo $i
 done

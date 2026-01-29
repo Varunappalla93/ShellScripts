@@ -3,8 +3,8 @@
 
 # Special Variables - can be used only inside double quotes, i.e. " "
 # $1 $2......$N  - args passed to script via terminal 
-# $@ - All variables passed to script  -> $@ - treats args separately
-# $# - No of variables passed to script
+# $@ - All args passed to script  -> $@ - treats args separately
+# $# - No of args passed to script
 # $0 - Script Name
 # $PWD - present working directory
 # $USER - who is executing the script

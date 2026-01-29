@@ -6,7 +6,7 @@
 # do
 #     echo $i
 # done
-# 1 2 3
+# O/P - 1 2 3
 
 
 USERID=$(id -u)

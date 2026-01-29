@@ -2,7 +2,8 @@
 #!/bin/bash
 
 # Error Handling
-# set and trap to use instead of validate function
+# set and trap is used to check errors instead of validate function
+
 set -e  # this will check for errors, will exit if errors are there.
 trap 'echo "There is error in $LINENO, Command: $BASH_COMMAND"' ERR
 

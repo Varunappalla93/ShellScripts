@@ -24,7 +24,7 @@ else
 fi
 }
 
-echo "Installing nginx"
+echo "Installing nginx server"
 dnf install nginx -y &>> $LOGS_FILE
 VALIDATE $? "nginx installation"
 

@@ -25,11 +25,9 @@ else
 fi
 }
 
-echo "Installing nginx server"
 dnf install nginx -y &>> $LOGS_FILE
 VALIDATE $? "nginx installation"
 
-echo "Installing mysql"
 dnf install mysql -y &>> $LOGS_FILE
 VALIDATE $? "sql installation"
 

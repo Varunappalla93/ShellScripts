@@ -25,10 +25,10 @@ else
 fi
 }
 
-dnf install nginx -y &>>$LOGS_FILE
+dnf install nginx -y &>> $LOGS_FILE
 VALIDATE $? "nginx installation"
 
-dnf install mysql -y &>>$LOGS_FILE
+dnf install mysql -y &>> $LOGS_FILE
 VALIDATE $? "sql installation"
 
 # sudo less /var/log/shell-script/07_Logs.sh.log - to check logs

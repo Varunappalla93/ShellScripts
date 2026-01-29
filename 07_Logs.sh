@@ -25,16 +25,16 @@ else
 fi
 }
 
-dnf install nginx -y &>> $LOGS_FILE
+dnf install nginx -y &>>$LOGS_FILE
 VALIDATE $? "nginx installation"
 
-dnf install mysql -y &>> $LOGS_FILE
+dnf install mysql -y &>>$LOGS_FILE
 VALIDATE $? "sql installation"
 
 # sudo less /var/log/shell-script/07_Logs.sh.log - to check logs
 
 
-# # Redirections
+# Redirections
 # ls -l > ou.txt-> stores command output to ou.txt file.
 # ls -l > ou.txt -> stores only successful command output to ou.txt file.
 # lsfd 2> ou.txt-> stores only failed command output to ou.txt file.

@@ -40,6 +40,6 @@ do
         dnf install $package -y &>> $LOGS_FILE   
         VALIDATE $? "$package installation"
     else
-         echo -e "$package is already installed, $BLUE skipping $NORMAL"
+        echo -e "$package is already installed, $BLUE skipping $NORMAL"
     fi
 done

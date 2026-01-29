@@ -1,6 +1,7 @@
 # Day 16
 #!/bin/bash
 
+# Error Handling
 # set and trap to use instead of validate function
 set -e  # this will check for errors, will exit if errors are there.
 trap 'echo "There is error in $LINENO, Command: $BASH_COMMAND"' ERR
@@ -28,6 +29,6 @@ do
         echo "$package is not installed, installing now"
         dnf install $package -y &>> $LOGS_FILE
     else
-         echo -e "$package is already installed, $BLUE skipping $NORMAL"
+        echo -e "$package is already installed, $BLUE skipping $NORMAL"
     fi
 done

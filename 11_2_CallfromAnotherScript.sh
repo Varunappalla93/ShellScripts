@@ -1,7 +1,7 @@
 # Day 18
 #!/bin/bash
 
-COUNTRY=INDIA
+COUNTRY=UAE
 
 echo "I am in: $COUNTRY"
 echo "PID of script 2 is $$"

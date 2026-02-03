@@ -22,3 +22,6 @@ fi
 
 FILES_TO_DELETE=$(find $LOGS_DIR -name "*.log" -mtime +14)
 echo "$FILES_TO_DELETE"
+
+# /home/ec2-user/applogs/shipping.log
+# /home/ec2-user/applogs/cart.log

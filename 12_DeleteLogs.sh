@@ -22,4 +22,4 @@ if [ ! -d $LOGS_DIR ]; then
 fi
 
 FILESTODELETE=$(find $LOGS_DIR -name "*.log" -type f -mtime +14)
-echo "$FILES_TO_DELETE
+echo "$FILES_TO_DELETE"

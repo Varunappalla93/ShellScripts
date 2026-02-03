@@ -12,7 +12,7 @@ RED='\e[31m'
 GREEN='\e[32m'
 BLUE='\e[33m'
 
-LOGS_DIR=/home/ec2-user/app-logs
+LOGS_DIR=/home/ec2-user/applogs
 LOGS_FILE="$LOGS_DIR/$0.log"
 
 

@@ -10,9 +10,8 @@ GREEN='\e[32m'
 BLUE='\e[33m'
 MESSAGE=""
 
-log()
-{
-    echo -e "$(date "+%Y-%m-%d %H:%M:%S") || $1" | tee -a $LOGS_FILE
+log(){
+    echo -e "$(date "+%Y-%m-%d %H:%M:%S") | $1"
 }
 
 DISK_USAGE=$(df -hT | grep -v Filesystem)

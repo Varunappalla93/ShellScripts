@@ -37,7 +37,7 @@ mkdir -p $LOGS_FOLDER
 
 USAGE()
 {
-    log "$RED USAGE :: sudo backup <SRC_DIR> <DEST_DIR> <DAYS>[Default 14 days] $NORMAL"
+    log "$RED USAGE :: sudo backup <SRC_DIR> <DEST_DIR> <DAYS>[Default 14 DAYS] $NORMAL"
     exit 1
 }
 
@@ -74,13 +74,15 @@ else
     TIMESTAMP=$(date +%F-%H-%M-%S)
     ZIP_FILE_NAME="$DEST_DIR/applogs/$TIMESTAMP.tar.gz"
     log "Archive name: $ZIP_FILE_NAME"
-    tar -zcvf $ZIP_FILE_NAME | $(find $SRC_DIR -name "*.log" -type f -mttime +$DAYS)
+    tar -zcvf $ZIP_FILE_NAME $(find $SRC_DIR -name "*.log" -type f -mtime +$DAYS)
 
+    # Check archive is success or not
     if [ -f $ZIP_FILE_NAME ]; then
         log "Archival is success"
 
         while IFS= read -r filepath;
         do
+        # Process each line here
         log "Deleting file: $filepath" 
         rm -f $filepath
         log "Deleted file: $filepath"

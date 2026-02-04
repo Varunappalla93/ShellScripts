@@ -1,5 +1,12 @@
 # Day 20
 
+# 1. user should pass source_dir dest_dir, default is 14 days, but user can override
+# 2. verify the directories exist and root user too
+# 3. find the files
+# 4. archive them and place into dest_dir
+# 5. check archive is success or not
+# 6. if success you can delete from source_dir
+
 #!/bin/bash
 
 USERID=$(id -u)

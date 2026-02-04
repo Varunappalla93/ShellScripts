@@ -1,5 +1,7 @@
 # Day 20
 
+# disk utilsation, trigger email if utilization is more than 3%
+
 #!/bin/bash
 
 NORMAL='\e[0m'

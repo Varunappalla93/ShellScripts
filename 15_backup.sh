@@ -98,4 +98,4 @@ fi
 # copy files in one path and adds execute permission for user, group, and others so that to execute like a command.
 # sudo cp 15_backup.sh /usr/bin/backup 
 # sudo chmod +x /usr/bin/backup 
-# sudo backup /home/ec2-user/applogs /home/ec2-user/destdir - to execute like a command for cron jobs.
+# sudo backup /home/ec2-user/applogs /home/ec2-user/destdir - to execute like a command for cron jobs scheduling.

@@ -27,5 +27,5 @@ done <<< $DISK_USAGE
 
 echo -e "$MESSAGE"
 
-# call mail script
+# call mail script to trigger mail
 sh 17_mail.sh "info@joindevops.com" "High Disk Usage Alert on $IP_ADDRESS" "$MESSAGE" "HIGH_DISK_USAGE" "$IP_ADDRESS" "DevOps Team"
